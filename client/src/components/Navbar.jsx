@@ -66,7 +66,7 @@ const Navbar = () => {
       }`}
     >
       {/* Logo */}
-      <Link href="/">
+      <Link to="/">
         <img
           src={assets.logoc}
           alt="logo"
