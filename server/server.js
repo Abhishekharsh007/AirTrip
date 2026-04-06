@@ -6,8 +6,11 @@ import { clerkMiddleware } from "@clerk/express";
 import clerkWebHooks from "./controllers/clerkWebhooks.js";
 import userRouter from "./routes/userRoutes.js";
 import hotelRouter from "./routes/hotelRoutes.js";
+import connectCloudinary from "./configs/cloudinary.js";
+import roomRouter from "./routes/roomRoutes.js";
 
 connectDB();
+connectCloudinary();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,5 +25,6 @@ app.use("/api/clerk", clerkWebHooks);
 app.get("/", (req, res) => res.send("API is working good and fine 🌷"));
 app.use("/api/user", userRouter);
 app.use("/api/hotels", hotelRouter);
+app.use("/api/rooms", roomRouter);
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
