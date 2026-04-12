@@ -5,11 +5,11 @@ import { cities } from "../assets/assets";
 const Hero = () => {
   return (
     <div className='flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url("/src/assets/heroImagec.jpg")] bg-no-repeat bg-cover bg-center h-screen'>
-      <p className="text-5xl font-bold">TRAVEL AROUND THE WORLD</p>
+      <p className="text-5xl font-bold text-amber-300">TRAVEL AROUND THE WORLD</p>
       <p className="text-4xl font-extrabold animate-bounce text-red-700 my-4">
-        Big Offer - Discount upto 80% OFF*
+        Big Offer - Discount upto 60% OFF*
       </p>
-      <p className="text-3xl font-black">on entire hotels and villas</p>
+      <p className="text-3xl font-black text-amber-400">on entire hotels and villas for 7 days</p>
 
       <form className="bg-white text-gray-500 rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto">
         <div>
